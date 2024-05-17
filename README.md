@@ -10,7 +10,9 @@ This repository offers a streamlined solution for deploying local LLM applicatio
 
 1. **Repository Cloning**: Clone the repository to initiate your local setup.
 2. **Download Model**: Download LLM model from the [HuggingFace](https://huggingface.co/models) and save it in `/models` directory.
-   > Download link: (https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main)
+   > C:\Users\alank\cw\models> **curl.exe**  *-O* https://huggingface.co/BashitAli/llama-2-7b-chat.ggmlv3.q5_K_M/pytorch_model.bin   
+
+   > Download links list for different models: (https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main)
 3. **Virtual Environment**: Establish an isolated environment for dependency management and then select that environment from the VS Code taskbar environment selector.
    ```
    conda create -p env_name python==3.9 -y

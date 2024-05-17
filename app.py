@@ -9,10 +9,11 @@ from langchain_community.llms import CTransformers
 
 def get_llama_responses(input_text, no_words, category):
     # pylint: disable-next=not-callable
-    llm = CTransformers(model='models\llama-2-7b-chat.ggmlv3.q8_0.bin',
+    llm = CTransformers(model=r'models\pytorch_model.bin',
                         model_type='llama',
-                        config={'max_new_tokens': 256,
-                                'temperature': 0.01})
+                        config={'max_new_tokens': 8000,
+                                'temperature': 0.5,
+                                'stream': True})
 
     # PromptTemplate
     template = """Write a  {category} on {input_text} in less than {no_words} words"""
